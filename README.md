@@ -59,24 +59,20 @@ straightforward:
 **Server announcements:** `SERVER: {announcement}\n`
 **Commands:** `/{command}\n`
 
-+---------+          +---------+          +--------------+
-| Client  |          | Server  |          | Other Clients|
-+---------+          +---------+          +--------------+
-     |                    |                       |
-     | ---- Connect ----> |                       |
-     |                    |                       |
-     | <----- NICK ------ |                       |
-     |                    |                       |
-     | ---- nickname ---> |                       |
-     |                    | ---- Join Msg ----->  |
-     |                    |                       |
-     | <---- History ---- |                       |
-     |                    |                       |
-     | ---- Message --->  |                       |
-     |                    | ---- Broadcast ---->  |
-     |                    |                       |
-     | <---- Response --- |                       |
-     |                    |                       |
+
+```
+Client            Server            Other Clients
+  |                 |                    |
+  |---- Connect --->|                    |
+  |<----- NICK ---- |                    |
+  |--- nickname --->|                    |
+  |                 |--- Join Msg -----> |
+  |<---- History ---|                    |
+  |--- Message ---->|                    |
+  |                 |--- Broadcast ----> |
+  |<---- Response --|                    |
+```
+
 
 ## Design Overview
 
