@@ -9,7 +9,7 @@ from collections import deque
 """
 Simple Chat Application Server
 -------------------------------------------------
-It is a  multi-threaded TCP chat server that allows multiple clients to connect
+It is a chat server that allows multiple clients to connect
 and communicate with each other in real-time.
 
 Faetures:
