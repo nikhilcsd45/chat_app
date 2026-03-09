@@ -114,10 +114,10 @@ Main Thread
      |
 
 CLIENT SIDE
-
+```
 Main Thread  -----> sends messages to server
 Receive Thread ----> listens for messages from server
-
+```
 
 ### What It Can Do
 
